@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+header > div {
+    display: flex;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 40px;
+}
+
+nav a {
+    color: #424551;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header input{
+    border: 1px solid #d7dadd;
+    padding: 12px 16px;
+    border-radius: 4px;
+    width: 380px;
+}
