@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@400;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>createx</title>
 
 </head>
 <body>
+    <section class="topbar_container">
+        <div class="wrapper">
+            <div class="nav_secondary_container">
+        <p>Available 24/7 at <span class="tel_accent">(405) 555-0128</span></p>
+        <nav class="menu_secondary">
+            <a href="#">Delivery & returns</a>
+            <a href="#">Track order</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <div class="currancy_account">
+        <div class="currancy">
+            <i class="fa-solid fa-flag-usa"></i>
+            <p>Eng / $</p>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="account">
+            <i class="fa-regular fa-user"></i>
+            <a href="#">Log in / Register</a>
+        </div>
+        </div>
+        </div>
+    </div>
+    </section>
 
     <header class="wrapper">
         <img src="./media/logo.svg" alt="logo">
@@ -16,21 +46,71 @@
             <a href="#">Men</a>
             <a href="#">Girls</a>
             <a href="#">Boys</a>
-            <a href="#">Sale</a>
+            <a class="accent"  href="#">Sale</a>
         </nav>
         <input type="text" placeholder="Search for products...">
-        <div>
+        <div class="icons_container">
             <div>
                 <i class="fa-regular fa-heart"></i>
                  <span>2</span>
             </div>
              <div>
                 <i class="fa-solid fa-cart-shopping"></i>
-                <span>4</span>
+                <span class="icons_color">4</span>
             </div>
         </div>        
        
     </header>
+
+    <div class="ads_banner">
+        <button><</button>
+        <a href="#">Up to 70% Off.</a>
+        <a href="#">Shop our latest sale styles</a>
+        <button>></button>
+    </div>
+
+    <section id="categories_container">
+        <div class="wrapper categories_content" >
+            <p>NEW COLLECTION</p>
+            <h2>Menswear 2020</h2>
+            <div class="shop_btns">
+                <button>Shop sale</button>
+                <button>Shop the menswear</button>
+            </div>
+            <div class="slider_controls">
+                <div>01</div>
+                <div>02</div>
+                <div>03</div>
+                <div>04</div>
+            
+            </div>
+        </div>      
+
+    </section>
+
+    <section id="top_catigories_container" class="wrapper">
+        <!-- <div>
+            <img src="./media/top_catigories/women.svg" alt="women">
+            <p>Women’s</p>
+        </div>
+        <div>
+            <img src="./media/top_catigories/men.svg" alt="men">
+            <p>Men’s</p>
+        </div>
+        <div>
+            <img src="./media/top_catigories/kids.svg" alt="kids">
+            <p>Kids’</p>
+        </div> -->
+
+    </section>
+
+    <section id="new_arrivals_container" class="wrapper_2">
+        <h1>New arrivals</h1>        
+        <p>Check out our latest arrivals for the upcoming season</p>
+        <a href="#">See the collection here</a>        
+        <div class="new_arrivals_cards"></div>      
+    </section>
+    
    
   
     
