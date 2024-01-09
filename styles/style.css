@@ -332,3 +332,133 @@ color: white;
     background-color: #17696A;
     color: white;
 }
+
+/* -----------POPULAR CATEGORIES----------- */
+
+#popular_categories{
+    margin-bottom: 180px;
+}
+
+#popular_categories .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#popular_categories h2{
+ color: #1E212C; 
+ font-size: 46px; 
+ font-weight: 900;
+ line-height: 60px; 
+ padding-bottom: 60px;
+}
+
+.popular_catigories_card{
+ display: flex;
+ justify-content: space-between; 
+ gap: 30px; 
+  
+}
+.popular_card div{
+    width: 180px;
+    height: 180px;
+   }
+
+.popular_card p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 24px;
+    line-height: 30px;
+
+}
+
+/* -----------TRENDING NOW---------------- */
+#trending_container{
+    background-color: #E5E8ED;
+    height: 950px;
+  
+}
+.trending_title{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.trending_title p{
+  font-weight: 900;
+  color: #1E212C;
+  font-size: 46px;
+  line-height: 60px;
+}
+.prev_btn {
+    width: 48px;
+    height: 48px;    
+    top: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: none;
+    background-color: transparent;
+}
+
+.next_btn{
+    width: 48px;
+    height: 48px;    
+    top: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: none;
+    background-color: transparent; 
+}
+
+.prev_btn:hover {
+background-color: #17696A;
+border-radius: 50%;
+}
+
+.next_btn:hover{
+    background-color: #17696A;
+    border-radius: 50%;  
+}
+
+.trending_card{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.trending_cards div{
+   width: 390px;
+   height: 440px; 
+}
+
+
+.trending_name{
+color: #424551;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+margin: 16px 0 8px 0;
+}
+
+.trending_price{
+    color: #1E212C;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    }
+
+.top_sales_btn{
+    margin: 80px auto;
+    background-color: transparent;
+    color: #17696A;
+    border: 1px solid #17696A;
+    padding: 26px 40px 26px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    align-items:center;
+    margin-bottom: 80px;
+}

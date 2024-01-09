@@ -103,3 +103,103 @@ new_arrivals_data.forEach(({img, title, price}) => {
     new_arrivals_cards.append(cardElem);
 
 })
+
+//popular_catigories_card
+
+const popular_catigories_card = document.querySelector('.popular_catigories_card')
+
+const popular_catigories_data = [
+    {
+        id: 1,
+        img: 'media/categories/tops.svg',
+        category: 'Tops'
+    },
+    {
+        id: 2,
+        img: 'media/categories/t-shirts.svg',
+        category: 'T-shirts'
+    },
+    {
+        id: 3,
+        img: 'media/categories/caps.svg',
+        category: 'Caps'
+    },
+    {
+        id: 4,
+        img: 'media/categories/sandals.svg',
+        category: 'Sandals'
+    },
+    {
+        id: 5,
+        img: 'media/categories/jackets.svg',
+        category: 'Jackets'
+    },
+    {
+        id: 6,
+        img: 'media/categories/coats.svg',
+        category: 'Coats'
+    }
+]
+
+popular_catigories_data.forEach(({img, category}) => {
+    const cardElem = document.createElement('div')
+    const imgElem = document.createElement('div');
+    const categoryElem = document.createElement('p');
+
+    categoryElem.innerText = category;
+    imgElem.style.backgroundImage = `url('${img}')`;
+      
+
+    cardElem.classList.add('popular_card');
+
+    cardElem.append(imgElem, categoryElem)
+    popular_catigories_card.append(cardElem)
+
+
+})
+
+const trending_card = document.querySelector('.trending_card');
+
+const trending_card_data = [
+    {
+        id: 1,
+        img: 'media/trending_card/shirt.svg',
+        title: 'Shirt with insertion lace trims',
+        price: '49.95'
+    },
+    {
+        id: 2,
+        img: 'media/trending_card/watch.svg',
+        title: 'Chrono watch with blue leather belt',
+        price: '120.60'
+    },
+    {
+        id: 3,
+        img: 'media/trending_card/coat.svg',
+        title: 'Check coat with colour contrast',
+        price: '183.45'
+    }
+]
+
+trending_card_data.forEach(({img, title, price}) => {
+
+    const cardElem = document.createElement('div');
+    const imgElem = document.createElement('div');
+    const titleElem = document.createElement('p');
+    const priceElem = document.createElement('p');
+
+    titleElem.innerText = title;
+    priceElem.innerText = `$${price}`
+
+    imgElem.style.backgroundImage = `url('${img}')`;
+
+    cardElem.classList.add('trending_cards');
+    titleElem.classList.add('trending_name');
+    priceElem.classList.add('trending_price')
+
+
+
+    cardElem.append(imgElem, titleElem, priceElem);
+    trending_card.append(cardElem);
+
+})
